@@ -25,9 +25,9 @@ extension SoundVC {
         button2.center = CGPoint(x: 75, y: 2 * view.frame.height / 4)
         button3.center = CGPoint(x: 75, y: 3 * view.frame.height / 4)
 
-        button1.setImage(UIImage(named: "button-roll"), for: .normal)
-        button2.setImage(UIImage(named: "button-sneeze"), for: .normal)
-        button3.setImage(UIImage(named: "button-toilet"), for: .normal)
+        button1.setImage(UIImage(named: "button-red-cough"), for: .normal)
+        button2.setImage(UIImage(named: "button-red-sneeze"), for: .normal)
+        button3.setImage(UIImage(named: "button-red-flush"), for: .normal)
         
         button1.addTarget(self, action: #selector(btn1Touched), for: .touchUpInside)
         button2.addTarget(self, action: #selector(btn2Touched), for: .touchUpInside)
@@ -51,9 +51,13 @@ extension SoundVC {
         label2.center = CGPoint(x: 9 * view.frame.width / 10, y: 2 * view.frame.height / 4)
         label3.center = CGPoint(x: 9 * view.frame.width / 10, y: 3 * view.frame.height / 4)
         
-        label1.textColor = Constants.GRAY
-        label2.textColor = Constants.GRAY
-        label3.textColor = Constants.GRAY
+        label1.textColor = .gray
+        label2.textColor = .gray
+        label3.textColor = .gray
+        
+        label1.font = UIFont(name: "AmericanTypewriter", size: 15.0)
+        label2.font = UIFont(name: "AmericanTypewriter", size: 15.0)
+        label3.font = UIFont(name: "AmericanTypewriter", size: 15.0)
         
         label1.text = "click for sneezing sound"
         label2.text = "click for coughing sound"
