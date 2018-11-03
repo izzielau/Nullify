@@ -10,14 +10,15 @@ import UIKit
 
 extension SoundVC {
     @objc func btn1Touched() {
-        
+        player1.play()
     }
     
     @objc func btn2Touched() {
-        
+        player2.play()
     }
     
     @objc func btn3Touched() {
-        
+        player3.play()
     }
+    
 }

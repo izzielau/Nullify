@@ -9,10 +9,12 @@
 import UIKit
 import AVFoundation
 
-class SoundVC: UIViewController, AVAudioPlayerDelegate {
+class SoundVC: UIViewController {
 
-    var player: AVAudioPlayer = AVAudioPlayer()
-    
+    var player1: AVAudioPlayer = AVAudioPlayer()
+    var player2: AVAudioPlayer = AVAudioPlayer()
+    var player3: AVAudioPlayer = AVAudioPlayer()
+
     var button1: UIButton!
     var button2: UIButton!
     var button3: UIButton!
@@ -27,8 +29,8 @@ class SoundVC: UIViewController, AVAudioPlayerDelegate {
         // Do any additional setup after loading the view.
         setupButtons()
         setUpLabels()
+        setupAudioPlayers()
     }
-    
 
     /*
     // MARK: - Navigation

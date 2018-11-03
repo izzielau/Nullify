@@ -10,6 +10,7 @@ import UIKit
 
 extension SoundVC {
     func setupButtons() {
+        
         let buttonSide = view.frame.width / 5
         
         button1 = UIButton(type: UIButton.ButtonType.custom) as UIButton
