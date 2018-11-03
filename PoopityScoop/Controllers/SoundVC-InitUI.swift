@@ -47,21 +47,17 @@ extension SoundVC {
         label2 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
         label3 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
         
-        label1.center = CGPoint(x: 250, y: view.frame.height / 4)
-        label2.center = CGPoint(x: 235, y: 2 * view.frame.height / 4)
-        label3.center = CGPoint(x: 250, y: 3 * view.frame.height / 4)
+        label1.center = CGPoint(x: 9 * view.frame.width / 10, y: view.frame.height / 4)
+        label2.center = CGPoint(x: 9 * view.frame.width / 10, y: 2 * view.frame.height / 4)
+        label3.center = CGPoint(x: 9 * view.frame.width / 10, y: 3 * view.frame.height / 4)
         
         label1.textColor = .gray
         label2.textColor = .gray
         label3.textColor = .gray
         
-        label1.textAlignment = .center
-        label2.textAlignment = .center
-        label3.textAlignment = .center
-        
         label1.text = "click for sneezing sound"
         label2.text = "click for coughing sound"
-        label3.text = "click for toilet flushing sound"
+        label3.text = "click for flushing sound"
         
         view.addSubview(label1)
         view.addSubview(label2)

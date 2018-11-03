@@ -27,6 +27,8 @@ class SoundVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        view.backgroundColor = Constants.DARK_GRAY
+        
         setupButtons()
         setUpLabels()
         setupAudioPlayers()

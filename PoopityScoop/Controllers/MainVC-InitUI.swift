@@ -33,7 +33,7 @@ extension MainVC {
         startButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width / 2, height: view.frame.height / 12))
         startButton.setTitle("Begin!", for: .normal)
         startButton.layer.cornerRadius = 10
-        startButton.backgroundColor = Constants.POOPITY_DARK_BLUE
+        startButton.backgroundColor = Constants.DARK_BLUE
         startButton.center = CGPoint(x: view.frame.width / 2, y: 7 * view.frame.height / 10)
         
         view.addSubview(startButton)

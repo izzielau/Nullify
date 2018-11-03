@@ -19,7 +19,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = Constants.POOPITY_LIGHT_BLUE
+        view.backgroundColor = Constants.LIGHT_BLUE
         
         setupLogo()
         setupTitle()
