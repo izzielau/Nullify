@@ -59,7 +59,7 @@ extension SoundVC {
         label2.textAlignment = .center
         label3.textAlignment = .center
         
-        label1.text = "click for toilet unrolling sound"
+        label1.text = "click for sneezing sound"
         label2.text = "click for coughing sound"
         label3.text = "click for toilet flushing sound"
         
