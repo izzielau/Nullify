@@ -16,12 +16,17 @@ class SoundVC: UIViewController, AVAudioPlayerDelegate {
     var button1: UIButton!
     var button2: UIButton!
     var button3: UIButton!
+    
+    var label1: UILabel!
+    var label2: UILabel!
+    var label3: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setupButtons()
+        setUpLabels()
     }
     
 

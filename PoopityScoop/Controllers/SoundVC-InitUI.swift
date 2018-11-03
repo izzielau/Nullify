@@ -20,9 +20,9 @@ extension SoundVC {
         button2.frame = CGRect(x: 0, y: 0, width: buttonSide, height: buttonSide)
         button3.frame = CGRect(x: 0, y: 0, width: buttonSide, height: buttonSide)
         
-        button1.center = CGPoint(x: view.frame.width / 2, y: view.frame.height / 4)
-        button2.center = CGPoint(x: view.frame.width / 2, y: 2 * view.frame.height / 4)
-        button3.center = CGPoint(x: view.frame.width / 2, y: 3 * view.frame.height / 4)
+        button1.center = CGPoint(x: 75, y: view.frame.height / 4)
+        button2.center = CGPoint(x: 75, y: 2 * view.frame.height / 4)
+        button3.center = CGPoint(x: 75, y: 3 * view.frame.height / 4)
 
         button1.setImage(UIImage(named: "button-roll"), for: .normal)
         button2.setImage(UIImage(named: "button-sneeze"), for: .normal)
@@ -35,6 +35,36 @@ extension SoundVC {
         view.addSubview(button1)
         view.addSubview(button2)
         view.addSubview(button3)
+
+    }
+    
+    func setUpLabels(){
+        
+        let labelSide = view.frame.width
+        
+        label1 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
+        label2 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
+        label3 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
+        
+        label1.center = CGPoint(x: 250, y: view.frame.height / 4)
+        label2.center = CGPoint(x: 235, y: 2 * view.frame.height / 4)
+        label3.center = CGPoint(x: 250, y: 3 * view.frame.height / 4)
+        
+        label1.textColor = .gray
+        label2.textColor = .gray
+        label3.textColor = .gray
+        
+        label1.textAlignment = .center
+        label2.textAlignment = .center
+        label3.textAlignment = .center
+        
+        label1.text = "click for toilet unrolling sound"
+        label2.text = "click for coughing sound"
+        label3.text = "click for toilet flushing sound"
+        
+        view.addSubview(label1)
+        view.addSubview(label2)
+        view.addSubview(label3)
 
     }
     
