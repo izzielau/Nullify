@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
-class SoundVC: UIViewController {
+class SoundVC: UIViewController, AVAudioPlayerDelegate {
 
+    var player: AVAudioPlayer = AVAudioPlayer()
+    
     var button1: UIButton!
     var button2: UIButton!
     var button3: UIButton!

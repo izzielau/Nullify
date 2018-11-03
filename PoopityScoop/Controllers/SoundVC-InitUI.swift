@@ -24,7 +24,7 @@ extension SoundVC {
         button2.center = CGPoint(x: view.frame.width / 2, y: 2 * view.frame.height / 4)
         button3.center = CGPoint(x: view.frame.width / 2, y: 3 * view.frame.height / 4)
 
-        button1.setImage(UIImage(named: "button-boom"), for: .normal)
+        button1.setImage(UIImage(named: "button-roll"), for: .normal)
         button2.setImage(UIImage(named: "button-sneeze"), for: .normal)
         button3.setImage(UIImage(named: "button-toilet"), for: .normal)
         
