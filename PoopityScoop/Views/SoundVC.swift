@@ -28,6 +28,8 @@ class SoundVC: UIViewController {
         
         view.backgroundColor = Constants.PEACH
         
+        setupNavBar()
+        
         setupButtons()
         setUpLabels()
         setupAudioPlayers()

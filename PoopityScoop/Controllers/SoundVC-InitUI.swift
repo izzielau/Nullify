@@ -9,6 +9,14 @@
 import UIKit
 
 extension SoundVC {
+    func setupNavBar() {
+        let navbar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50));
+        navbar.tintColor = Constants.DARK_CORAL
+        navbar.isTranslucent = false
+        
+        self.view.addSubview(navbar)
+    }
+    
     func setupButtons() {
         
         let buttonSide = view.frame.width / 5
@@ -21,9 +29,9 @@ extension SoundVC {
         button2.frame = CGRect(x: 0, y: 0, width: buttonSide, height: buttonSide)
         button3.frame = CGRect(x: 0, y: 0, width: buttonSide, height: buttonSide)
         
-        button1.center = CGPoint(x: 75, y: view.frame.height / 4)
-        button2.center = CGPoint(x: 75, y: 2 * view.frame.height / 4)
-        button3.center = CGPoint(x: 75, y: 3 * view.frame.height / 4)
+        button1.center = CGPoint(x: view.frame.width / 4, y: view.frame.height / 2)
+        button2.center = CGPoint(x: 2 * view.frame.width / 4, y: view.frame.height / 2)
+        button3.center = CGPoint(x: 3 * view.frame.width / 4, y: view.frame.height / 2)
 
         button1.setImage(UIImage(named: "button-red-cough"), for: .normal)
         button2.setImage(UIImage(named: "button-red-sneeze"), for: .normal)
@@ -41,15 +49,19 @@ extension SoundVC {
     
     func setUpLabels(){
         
-        let labelSide = view.frame.width
+        let labelSide = view.frame.width / 4
         
         label1 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
         label2 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
         label3 = UILabel(frame: CGRect(x: 0, y: 0, width: labelSide, height: labelSide))
         
-        label1.center = CGPoint(x: 9 * view.frame.width / 10, y: view.frame.height / 4)
-        label2.center = CGPoint(x: 9 * view.frame.width / 10, y: 2 * view.frame.height / 4)
-        label3.center = CGPoint(x: 9 * view.frame.width / 10, y: 3 * view.frame.height / 4)
+        label1.center = CGPoint(x: view.frame.width / 4, y: 6 * view.frame.height / 10)
+        label2.center = CGPoint(x: 2 * view.frame.width / 4, y: 6 * view.frame.height / 10)
+        label3.center = CGPoint(x: 3 * view.frame.width / 4, y: 6 * view.frame.height / 10)
+        
+        label1.textAlignment = .center
+        label2.textAlignment = .center
+        label3.textAlignment = .center
         
         label1.textColor = .gray
         label2.textColor = .gray
@@ -59,9 +71,9 @@ extension SoundVC {
         label2.font = UIFont(name: "AmericanTypewriter", size: 15.0)
         label3.font = UIFont(name: "AmericanTypewriter", size: 15.0)
         
-        label1.text = "click for sneezing sound"
-        label2.text = "click for coughing sound"
-        label3.text = "click for flushing sound"
+        label1.text = "Sneeze"
+        label2.text = "Cough"
+        label3.text = "Flush"
         
         view.addSubview(label1)
         view.addSubview(label2)
