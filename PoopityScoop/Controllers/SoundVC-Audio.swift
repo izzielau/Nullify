@@ -13,13 +13,13 @@ extension SoundVC: AVAudioPlayerDelegate {
     func setupAudioPlayers() {
         
         do {
-            let audio1 = Bundle.main.path(forResource: "sneezing", ofType: "mp4")
+            let audio1 = Bundle.main.path(forResource: "sneezing", ofType: "wav")
             player1 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audio1!))
         } catch {
         }
         
         do {
-            let audio2 = Bundle.main.path(forResource: "coughing", ofType: "mp4")
+            let audio2 = Bundle.main.path(forResource: "coughing", ofType: "wav")
             player2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: audio2!))
         } catch {
         }

@@ -13,5 +13,4 @@ class Constants {
     static let POOPITY_BLUE = UIColor(red: 117.0/255.0, green: 179.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     static let POOPITY_DARK_BLUE = UIColor(red: 109.0/255.0, green: 158.0/255.0, blue: 235.0/255.0, alpha: 1.0)
     static let WHITE = UIColor(red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 1.0)
-
 }
