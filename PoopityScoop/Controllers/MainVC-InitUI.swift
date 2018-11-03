@@ -20,9 +20,10 @@ extension MainVC {
     
     func setupTitle() {
         titleText = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 50))
-        titleText.text = "PoopityScoop"
+        titleText.text = "Nullify"
         titleText.textColor = .white
-        titleText.font = UIFont(name: "Avenir", size: 25.0)
+        titleText.font = UIFont(name: "Avenir", size: 45.0)
+        titleText.font = UIFont.boldSystemFont(ofSize: 16.0)
         titleText.textAlignment = .center
         titleText.center = CGPoint(x: view.frame.width / 2, y: 3 * view.frame.height / 5)
         view.addSubview(titleText)
@@ -33,7 +34,7 @@ extension MainVC {
         startButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.width / 2, height: view.frame.height / 12))
         startButton.setTitle("Begin!", for: .normal)
         startButton.layer.cornerRadius = 10
-        startButton.backgroundColor = Constants.DARK_BLUE
+        startButton.backgroundColor = Constants.LIGHT_CORAL
         startButton.center = CGPoint(x: view.frame.width / 2, y: 7 * view.frame.height / 10)
         
         view.addSubview(startButton)

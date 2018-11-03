@@ -51,9 +51,9 @@ extension SoundVC {
         label2.center = CGPoint(x: 9 * view.frame.width / 10, y: 2 * view.frame.height / 4)
         label3.center = CGPoint(x: 9 * view.frame.width / 10, y: 3 * view.frame.height / 4)
         
-        label1.textColor = .gray
-        label2.textColor = .gray
-        label3.textColor = .gray
+        label1.textColor = Constants.GRAY
+        label2.textColor = Constants.GRAY
+        label3.textColor = Constants.GRAY
         
         label1.text = "click for sneezing sound"
         label2.text = "click for coughing sound"
